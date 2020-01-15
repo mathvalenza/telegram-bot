@@ -16,7 +16,7 @@ app.post('/new-message', function(req, res) {
 
   //Each message contains "text" and a "chat" object, which has an "id" which is the chat id
 
-  if (!message || message.text.toLowerCase().indexOf('Matheus') < 0) {
+  if (!message || message.text.toLowerCase().indexOf('matheus') < 0) {
     // In case a message is not present, or if our message does not have the word matheus in it, do nothing and return an empty response
     return res.end()
   }
